@@ -1,0 +1,128 @@
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
+*{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+    
+    .container{
+        width: 35%;
+        position: absolute;
+        display: flex;
+        top:30%;
+        left:35%;
+        transform: translate(-50% -50%);
+        border-radius: 20px;
+        box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.1);
+    }
+    .container .result{
+        flex-basis: 50%;
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        border-radius: 20px;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    } 
+    .container .result h5{
+        font-size: 19px;
+        color: #ffff;
+        font-weight: 300;
+    }
+    .container .result .deep-heading{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .container .result .total-result{
+        width: 70%;
+        height:50%;
+        border-radius: 50%;
+        text-align: center;
+        background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        padding: 35px;
+    }
+    .container .result .total-result p{
+      color: #fff;
+      font-size: 16px;
+    }
+    .container .result .total-result span{
+        font-size: 55px;
+        font-weight: 700;
+    }
+    .container .result p{
+        text-align: center;
+        color: white;
+    }
+    .container .summary{
+        flex-basis: 50%;
+        padding: 20px;
+    }
+    .container .summary h5{
+        font-size: 20px;
+    }
+    .container .summary .cards{
+        width: 100%;
+        margin: 1.5rem 0rem;
+    }
+    .container .summary .cards .card{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        padding: 12px 10px;
+        margin: 1rem 0rem;
+    }
+    .container .summary .cards .card span{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+    }
+    .container .summary button{
+        width: 100%;
+        padding: 12px 20px;
+        background-color: #303B59;
+        color: white;
+        border-radius: 30px;
+        transition: 0.6s;
+        font-weight: 600;
+        border: none;
+    }
+    .container .summary button:hover{
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        left: 0; 
+        height: 100%;
+    }
+    .container .result{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    height: 100%;
+  } 
+    .container .result .total-result{
+        width: 50%;
+    }
+    .container .result .total-result span{
+        font-size: 55px;
+    }
+    .container .result{
+        font-family: 17px;
+    }
+    .container .summary .cards .card{
+        padding: 15px;
+    }
+  }
+  
